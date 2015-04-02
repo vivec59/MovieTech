@@ -1,5 +1,5 @@
 <?php 
-require_once('../model/movie_model.php');
+	include_once('model/movie_model.php')
 
-getMovie("bla");
+	get_movie("coucou");
 ?>
