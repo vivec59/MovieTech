@@ -1,0 +1,141 @@
+body {
+  margin: 0 auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: bolder;
+	margin-bottom: 0.7em;
+}
+
+h2 {
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 0.7em;
+}
+
+#container{
+	width: 900px;
+	margin : 0 auto;
+}
+
+#header{
+	font-size: 25px;
+	text-align: center;
+	height: 50px;
+	padding: 10px 0;
+  	background: #f1f1f1;
+}
+
+#footer{
+	bottom : 0;
+	height: 40px;
+	background-color: #d7d7d7;
+	position: absolute;
+	width: 100%;
+	color: #97999f;
+}
+
+#information{
+	margin-left: 100px;	
+}
+
+#propriete{
+	float: right;
+	margin-right: 50px;
+}
+
+/*DIV CONNEXION	*/
+#menu{
+	height: 60px;
+	background-color: #2f3440;
+}
+
+.imgMenu{
+	height: 50px;
+	width: 80px;
+	float: left;
+	margin-left: 10%;
+}
+
+#identification{
+	margin-left: 100px;
+	padding : 13px 10px;
+	color: #97999f;
+}
+
+.imgProfil{
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#connection{
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+.boutonadd{
+	padding: 5px;
+	background-color: #337ab7;
+  	border-color: #2e6da4;
+ 	color: #fff;
+ 	text-align: center;
+}
+
+.boutonLogOut{
+	padding: 5px;
+	color: #fff;
+ 	text-align: center;
+ 	background-color: #d9534f;
+ 	border-color: #d43f3a;
+}
+
+.boutonLogIn{
+	padding: 5px;
+	color: #fff;
+ 	text-align: center;
+ 	background-color: #5cb85c;
+  	border-color: #4cae4c;
+}
+
+/*	ITEM BLOG	*/
+.items{
+	border: solid 1px black;
+	width: 400px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2),0 1px 5px rgba(0,0,0,.2);
+	margin-top: 15px;
+}
+
+.sujet{
+	text-align: center;
+	color: #97999f;
+	padding: 8px 0px;
+	background-color: #4285f4;
+	margin: 0;	
+	border-bottom: solid 1px black;
+}
+
+.corp{
+	padding: 15px 30px 15px 30px;
+}
+
+.tag{
+	color: blue;
+	margin-left: 30px;
+}
+
+.heurepost{
+	margin-top: 3px;
+	color: blue;
+	font-size: 10px;
+	float: right;
+}
