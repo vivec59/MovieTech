@@ -1,7 +1,6 @@
 <?php
 	require_once('controller/home_controller.php'); 
 	require_once('model/movie_model.php');
-	require_once('api-allocine-helper/api-allocine-helper.php')
 ?>
 	
         <?php
