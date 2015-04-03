@@ -5,7 +5,7 @@
 function get_movie()
 {
 	$bdd = getConnection();
-	$marequete = "select * FROM film where ID_Film = 1";
+	$marequete = "select * FROM film";
 	$resultat = $bdd->query($marequete);
 	return $resultat->fetchAll();
 }

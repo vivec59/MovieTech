@@ -3,12 +3,11 @@
 	require_once('model/movie_model.php');
 	require_once('api-allocine-helper/api-allocine-helper.php')
 ?>
-
-   
+	
         <?php
         	$AllMovie = get_movie();
         ?>
-        <div id="Div_ListeFilm">
+        <div class="Div_ListeFilm col-md-4" >
         	<div class="sujet">Liste de mes films</div>
         	<div class="corp">
         		<table>
@@ -35,6 +34,12 @@
 		        ?>
 		         </table>
 	        </div>
+    	</div>
+
+    	<div class="Recherche col-md-4 col-md-offset-1">
+    		 <label class="" for="txtDate">Rechercher un film : </label>
+             <input class="search" type="text"  name="recherche" />
+             <input class="btn btn-success" type="submit" value="Valider" />
     	</div>
 
     

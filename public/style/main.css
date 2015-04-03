@@ -29,6 +29,9 @@ th{
 	padding-right: 40px;
 }
 
+#id{
+	float: right;
+}
 
 #container{
 	width: 900px;
@@ -75,11 +78,16 @@ th{
 }
 
 /*	contenu	*/
-#Div_ListeFilm{
+.Div_ListeFilm{
 	border: solid 1px black;
 	width: 400px;
 	box-shadow: 0 2px 2px rgba(0,0,0,.2),0 1px 5px rgba(0,0,0,.2);
 	margin-top: 15px;
+	padding: 0;
+}
+
+.Recherche{
+	margin-top: 10px;
 }
 
 .sujet{
