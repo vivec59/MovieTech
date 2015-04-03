@@ -20,6 +20,10 @@ h2 {
 	margin-bottom: 0.7em;
 }
 
+td{
+	padding-right: 40px;
+}
+
 #container{
 	width: 900px;
 	margin : 0 auto;

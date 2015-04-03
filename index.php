@@ -5,7 +5,6 @@
 	<title>MovieTech</title>
 	<link rel="stylesheet" href="public/style/bootstrap.min.css">
 	<link rel="stylesheet" href="public/style/main.css">
-	<link rel="stylesheet" href="public/style/bootstrap.min.css">
 </head>
 
 <body>

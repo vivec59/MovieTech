@@ -10,25 +10,24 @@
         <div id="Div_ListeFilm">
         	<div class="sujet">Liste de mes films</div>
         	<div class="corp">
-        <table>
-       	<?php
-        	foreach($AllMovie as $movie)
-            {
-        ?>
-		        <tr>
-		            <td><?php echo $movie["Nom_Film"]; ?>
-		            </td>
-		            <td><?php echo $movie["Annee_Film"]; ?>
-		            </td>
-		            <td><?php echo $movie["Categorie_Film"]; ?>
-		            </td>
-		            <td><?php echo $movie["Realisateur_Film"]; ?>
-		            </td>
-		         </tr>
+        		<table>
+		       	<?php
+		        	foreach($AllMovie as $movie)
+		            {
+		        ?>
+				        <tr>
+				            <td><?php echo $movie["Nom_Film"]; ?>
+				            </td>
+				            <td><?php echo $movie["Annee_Film"]; ?>
+				            </td>
+				            <td><?php echo $movie["Categorie_Film"]; ?>
+				            </td>
+				         </tr>
+		     	</table>
 	        </div>
                      <?php
-            }
-        ?>
+	            }
+	        ?>
     	</div>
 
-    </table>
+    
