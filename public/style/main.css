@@ -64,51 +64,8 @@ h2 {
 	margin-left: 10%;
 }
 
-#identification{
-	margin-left: 100px;
-	padding : 13px 10px;
-	color: #97999f;
-}
-
-.imgProfil{
-	height: 35px;
-	width: 35px;
-	margin-right: 10px;
-	vertical-align: middle;
-}
-
-#connection{
-	float: right;
-	margin-top: 20px;
-	margin-right: 50px;
-}
-
-.boutonadd{
-	padding: 5px;
-	background-color: #337ab7;
-  	border-color: #2e6da4;
- 	color: #fff;
- 	text-align: center;
-}
-
-.boutonLogOut{
-	padding: 5px;
-	color: #fff;
- 	text-align: center;
- 	background-color: #d9534f;
- 	border-color: #d43f3a;
-}
-
-.boutonLogIn{
-	padding: 5px;
-	color: #fff;
- 	text-align: center;
- 	background-color: #5cb85c;
-  	border-color: #4cae4c;
-}
-
-/*	ITEM BLOG	*/
-.items{
+/*	contenu	*/
+#Div_ListeFilm{
 	border: solid 1px black;
 	width: 400px;
 	box-shadow: 0 2px 2px rgba(0,0,0,.2),0 1px 5px rgba(0,0,0,.2);
@@ -117,7 +74,7 @@ h2 {
 
 .sujet{
 	text-align: center;
-	color: #97999f;
+	color: #fff;
 	padding: 8px 0px;
 	background-color: #4285f4;
 	margin: 0;	
@@ -125,7 +82,7 @@ h2 {
 }
 
 .corp{
-	padding: 15px 30px 15px 30px;
+	padding: 15px 15px 15px 30px;
 }
 
 .tag{

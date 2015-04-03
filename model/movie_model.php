@@ -1,10 +1,11 @@
 <?php 
 require_once('connection_sql.php');
 
-function get_movie($movie_name)
+function get_movie()
 {
 	$bdd = getConnection();
-	if (is_null($bdd))
-		console.log('CONNARD');
+	$marequete = "select * FROM film where ID_Film = 1";
+	$resultat = $bdd->query($marequete);
+	return $resultat->fetchAll();
 }
 ?>
