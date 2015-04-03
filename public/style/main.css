@@ -24,6 +24,12 @@ td{
 	padding-right: 40px;
 }
 
+th{
+	text-align: center;
+	padding-right: 40px;
+}
+
+
 #container{
 	width: 900px;
 	margin : 0 auto;

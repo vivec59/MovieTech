@@ -11,7 +11,12 @@
         	<div class="sujet">Liste de mes films</div>
         	<div class="corp">
         		<table>
-		       	<?php
+        			<tr>
+        				<th>Nom</td>
+        				<th>Année</td>
+        				<th>Catégorie</td>
+        			</tr>
+  		       	<?php
 		        	foreach($AllMovie as $movie)
 		            {
 		        ?>
@@ -23,11 +28,12 @@
 				            <td><?php echo $movie["Categorie_Film"]; ?>
 				            </td>
 				         </tr>
-		     	</table>
-	        </div>
+		     	
                      <?php
-	            }
-	        ?>
+		            }
+		        ?>
+		         </table>
+	        </div>
     	</div>
 
     
