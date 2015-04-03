@@ -22,3 +22,7 @@ CREATE TABLE IF NOT EXISTS `film` (
   `Realisateur_Film` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`ID_Film`)
 );
+
+INSERT INTO `film`(`ID_Film`, `Nom_Film`, `Annee_Film`, `Categorie_Film`, `Realisateur_Film`) VALUES (1,"Star Wars IV","1977","Science-fiction","George Lucas");
+INSERT INTO `film`(`ID_Film`, `Nom_Film`, `Annee_Film`, `Categorie_Film`, `Realisateur_Film`) VALUES (2,"Star Wars V","1980","Science-fiction","George Lucas");
+INSERT INTO `film`(`ID_Film`, `Nom_Film`, `Annee_Film`, `Categorie_Film`, `Realisateur_Film`) VALUES (3,"Star Wars VI","1983","Science-fiction","George Lucas");
