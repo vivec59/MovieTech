@@ -1,12 +1,5 @@
-<?php
-	require_once('controller/home_controller.php'); 
-	require_once('model/movie_model.php');
-?>
-	
-        <?php
-        	$AllMovie = get_movie();
-        ?>
-        <div class="Div_ListeFilm col-md-4" >
+
+      <!--  <div class="Div_ListeFilm col-md-4" >
         	<div class="sujet">Liste de mes films</div>
         	<div class="corp">
         		<table>
@@ -33,12 +26,17 @@
 		        ?>
 		         </table>
 	        </div>
-    	</div>
+    	</div> -->
 
-    	<div class="Recherche col-md-4 col-md-offset-1">
-    		 <label class="" for="txtDate">Rechercher un film : </label>
-             <input class="search" type="text"  name="recherche" />
-             <input class="btn btn-success" type="submit" value="Valider" />
-    	</div>
+        <div class="row">
+        	<div class="Recherche col-md-4 col-md-offset-1">
+            	<form action="controller/home_controller.php" method="POST" id="frm_search">
+                	 <label class="" for="txtDate">Rechercher un film : </label>
+                     <input class="search" type="text"  name="recherche" />
+                     <input class="btn btn-success" type="submit" value="Valider" />
+            	</form>
+            </div>
+        </div>
 
+  
     

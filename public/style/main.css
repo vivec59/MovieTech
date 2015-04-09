@@ -29,6 +29,13 @@ th{
 	padding-right: 40px;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 #id{
 	float: right;
 }
