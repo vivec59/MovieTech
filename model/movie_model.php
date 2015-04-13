@@ -7,7 +7,11 @@ function get_movie($monfilm)
 	$bdd = getConnection();
 	$marequete = "SELECT COUNT * FROM film WHERE Nom_Film LIKE '%".$monfilm."%'";
 	$resultat = $bdd->query($marequete);
-	return $resultat->fetchAll();
+	$reponse = $resultat->fetchAll();
+	if ($reponse != null)
+		return true;
+	else
+		return false;
 }
 
 function get_movie_by_name($titre)
