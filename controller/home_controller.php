@@ -11,21 +11,26 @@ require_once('../allocine-api/PHP/allocine.class.php');
 
 	if (isset($_POST['recherche']))
 	{
-		//appeler la fonction get_movie pour vérifier dans la BDD si le film y existe
-		////////
-		//TODO//
-		////////
-		//si le film n'est pas dans la base, on appelle get_movie_by_name
-		$reponse = json_decode(get_movie_by_name($_POST['recherche']));
+		$resultat = get_movie(($_POST['recherche']));
+		if($resultat != null)
+		{
+			$mon_film = new Movie($resultat->Nom_Film, $resultat->Annee_Film, $resultat->Categorie_Film, $reponse->Realisateur_Film)
+			echo json_encode($mon_film);
+		}
+		else
+		{
+			$reponse = json_decode(get_movie_by_name($_POST['recherche']));
+			echo json_encode($reponse);	
 		//si il y a plusieurs réponses, on demande de faire un choix à l'utilisateur
 		////////
 		//TODO//
-		////////
-		echo json_encode($reponse);
+		///////
+		//echo json_encode($reponse);
 		//sinon, on affiche et on ajoute en base (créer fonction add_movie)
 		////////
 		//TODO//
 		////////
+		}
 	}
 
 ?>
