@@ -14,7 +14,7 @@ require_once('../allocine-api/PHP/allocine.class.php');
 		$resultat = get_movie(($_POST['recherche']));
 		if($resultat != null)
 		{
-			$mon_film = new Movie($resultat->Nom_Film, $resultat->Annee_Film, $resultat->Categorie_Film, $reponse->Realisateur_Film)
+			$mon_film = new Movie($resultat->Nom_Film, $resultat->Annee_Film, $resultat->Categorie_Film, $resultat->Realisateur_Film);
 			echo json_encode($mon_film);
 		}
 		else
