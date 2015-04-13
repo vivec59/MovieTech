@@ -1,6 +1,8 @@
-class movie {
+<?php
+
+class movie() {
 	private $_nom;
-	private $_originalTitle;
+	//private $_originalTitle;
 	private $_annee;
 	private $_categorie;
 	private $_realisateur;
@@ -8,7 +10,7 @@ class movie {
 	 function __construct($nom, $originalTitle, $annee, $categorie, $realisateur)
     {
         $this->_nom = $nom;
-        $this->_originalTitle = $originalTitle;
+        //$this->_originalTitle = $originalTitle;
         $this->_annee = $annee;
         $this->_categorie = $categorie;
         $this->_realisateur = $realisateur;
@@ -19,10 +21,10 @@ class movie {
     	return $this->_nom;
 	}
 
-	public function originalTitle()
+/*	public function originalTitle()
 	{
     	return $this->_originalTitle;
-	}
+	}*/
 
 	public function annee()
 	{
@@ -49,7 +51,7 @@ class movie {
 	    $this->_nom = $value;
 	}
 
-	public function OriginalTitle($value = "")
+	/*public function OriginalTitle($value = "")
 	{
 	    if ($value == "")
 	    {
@@ -57,7 +59,7 @@ class movie {
 	    }
 
 	    $this->_originalTitle = $value;
-	}
+	}*/
 
 	public function Annee($value = "")
 	{
@@ -89,3 +91,5 @@ class movie {
 	    $this->_realisateur = $value;
 	}
 }
+
+?>
