@@ -36,10 +36,10 @@ $(document).ready(function(){
                 {
                 	$.each($reponse, function(key, value)
 					{	
-	                    /*$jaquette = "http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/commons/emptymedia/empty_photo.jpg";
-	                    var $divfilm = $("<div class='row film'><div class='ListFilm col-md-5 col-md-offset-1'><div class='col-md-2'><img src=\"" + $jaquette + "\" width=\"60\" height=\"80\" /></div> <div class='col-md-10'><label>Nom : </label>  " + value.Nom_Film + " <label>Année : </label> " + value.Annee_Film + "</br><label>Acteurs : </label></div></div></div>");
+	                    $jaquette = "http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/commons/emptymedia/empty_photo.jpg";
+	                    var $divfilm = $("<div class='row film'><div class='ListFilm col-md-5 col-md-offset-1'><div class='col-md-2'><img src=\"" + $jaquette + "\" width=\"60\" height=\"80\" /></div> <div class='col-md-10'><label>Nom : </label>  " + $reponse[key]["Nom_Film"] + " <label>Année : </label> " + $reponse[key]["Annee_Film"] + "</br><label>Catégorie : </label> " + $reponse[key]["Categorie_Film"] + "</br><label>Réalisateur : </label> " + $reponse[key]["Realisateur_Film"] + "</br></div></div></div>");
 						
-	                    $("body").append($divfilm);*/
+	                    $("body").append($divfilm);
 
 	                    console.log(key + " : " + $reponse[key]);
 	                });
