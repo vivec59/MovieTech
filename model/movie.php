@@ -1,22 +1,23 @@
 <?php
 
-class movie() {
+class movie {
 	private $_nom;
 	//private $_originalTitle;
 	private $_annee;
 	private $_categorie;
 	private $_realisateur;
 
-	 function __construct($nom, $originalTitle, $annee, $categorie, $realisateur)
+	 function __construct($nom1, /*$originalTitle,*/ $annee1, $categorie1, $realisateur1)
     {
-        $this->_nom = $nom;
+        $this->_nom = $nom1;
         //$this->_originalTitle = $originalTitle;
-        $this->_annee = $annee;
-        $this->_categorie = $categorie;
-        $this->_realisateur = $realisateur;
+        $this->_annee = $annee1;
+        $this->_categorie = $categorie1;
+        $this->_realisateur = $realisateur1;
     }
 
-    public function nom()
+
+    public function getNom()
 	{
     	return $this->_nom;
 	}
@@ -26,22 +27,22 @@ class movie() {
     	return $this->_originalTitle;
 	}*/
 
-	public function annee()
+	public function getAnnee()
 	{
     	return $this->_annee;
 	}
 
-	public function categorie()
+	public function getCetegorie()
 	{
     	return $this->_categorie;
 	}
 
-	public function realisateur()
+	public function getRealisateur()
 	{
     	return $this->_realisateur;
 	}	
 
-	public function Nom($value = "")
+	public function setNom($value = "")
 	{
 	    if ($value == "")
 	    {
@@ -61,7 +62,7 @@ class movie() {
 	    $this->_originalTitle = $value;
 	}*/
 
-	public function Annee($value = "")
+	public function setAnnee($value = "")
 	{
 	    if ($value == "")
 	    {
@@ -71,7 +72,7 @@ class movie() {
 	    $this->_annee = $value;
 	}
 
-	public function Categorie($value = "")
+	public function setCategorie($value = "")
 	{
 	    if ($value == "")
 	    {
@@ -81,7 +82,7 @@ class movie() {
 	    $this->_categorie = $value;
 	}
 
-	public function Realisateur($value = "")
+	public function setRealisateur($value = "")
 	{
 	    if ($value == "")
 	    {
