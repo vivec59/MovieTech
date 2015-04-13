@@ -2,7 +2,7 @@
 
 class movie {
 	private $_nom;
-	//private $_originalTitle;
+	//private $_originalTitle; //Pour améliorer le contenu de la BDD
 	private $_annee;
 	private $_categorie;
 	private $_realisateur;
@@ -41,6 +41,7 @@ class movie {
 	{
     	return $this->_realisateur;
 	}	
+
 
 	public function setNom($value = "")
 	{
